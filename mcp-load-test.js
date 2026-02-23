@@ -2,9 +2,9 @@
 import EventSource from "eventsource";
 import fetch from "node-fetch";
 
-const MCP_URL = "http://3.92.23.226:8080/mcp";
-// const MCP_URL = "http://localhost:3100/mcp";
-const ACCESS_TOKEN = "mcp_1419bbb45c709c86f881222d75a659a2a2be124debc31fb6";
+// const MCP_URL = "http://3.92.23.226:8080/mcp";
+const MCP_URL = "http://localhost:3100/mcp";
+const ACCESS_TOKEN = "mcp_ea19ab716b3d36e6fe12e1390d5dfe1e4590875aebb1b4a9";
 
 // Set to true for detailed request/response logging (useful for debugging)
 const VERBOSE_LOGGING = false;
@@ -357,8 +357,8 @@ class MCPClient {
 
 // Load test configuration
 const TEST_CONFIG = {
-  numClients: 200, // 60 concurrent clients
-  duration: 30000, // 30 seconds
+  numClients: 200, // 100 concurrent clients
+  duration: 10000, // 10 seconds
   toolCallInterval: 1000, // Each client makes a call every 2 seconds
   verboseLogging: false, // Set to true for detailed logs during tool calls
 };
